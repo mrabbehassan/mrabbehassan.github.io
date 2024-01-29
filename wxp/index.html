@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3 class="text-center mb-4">Register Today</h3>
+                        <form class="requires-validation" novalidate id="form">
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <input class="form-control" type="text" name="fname" placeholder="First Name" required>
+                                    <div class="invalid-feedback">First name cannot be blank!</div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <input class="form-control" type="text" name="lname" placeholder="Last Name" required>
+                                    <div class="invalid-feedback">Last name cannot be blank!</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="email" name="email" placeholder="Email (ex: admin@domain.com)" required>
+                                <div class="invalid-feedback">Email cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="businessname" placeholder="Company name" required>
+                                <div class="invalid-feedback">Company name cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="website" placeholder="Website (ex: domain.com)" required>
+                                <div class="invalid-feedback">Website cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="telegram" placeholder="Telegram" required>
+                                <div class="invalid-feedback">Telegram account cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="password" name="password" placeholder="Password" required>
+                                <div class="invalid-feedback">Password cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12 mt-4 pt-2">
+                                <label class="mb-3 mr-1 me-2" for="type">Register as: </label>
+
+                                <input type="radio" class="btn-check" name="type" id="vendor" value="VENDOR" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-primary" for="vendor">Vendor</label>
+
+                                <input type="radio" class="btn-check" name="type" id="merchant" value="AGENTUSER" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-primary" for="merchant">Merchant</label>
+
+                                <div class="invalid-feedback mv-up">Please select account type!</div>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label">I confirm that all data are correct</label>
+                                <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                            </div>
+
+
+                            <div class="form-button mt-5 d-flex justify-content-center">
+                                <button id="submit" type="submit" class="btn btn-primary submitbtn">Register</button>
+                            </div>
+                        </form>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="confirmationModal">
+                            <div class="modal-dialog modal-dialog-centered modal-sm">
+                                <div class="modal-content">
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <h5 class="text-center fw-bold" id="messageStatus">Congratulation!</h5>
+                                        <p class="text-center" id="MessageBody">Your account has been successfully created.</p>
+                                        <div class="container" id="PulseBtn">
+                                            <div class="bg"></div>
+                                            <div class="button">
+                                                &#10003;
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
