@@ -474,18 +474,8 @@ li.sub-menu-style-two:hover ul.sub-menu-two {
 
 .booking-input-box {
     position: relative;
-    width: 22%;
+    width: 17.5%;
     display: inline-block;
-}
-
-.booking-input-box:before {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 90%;
-    right: 10px;
-    top: -2px;
-    background: #66666673;
 }
 
 
@@ -500,20 +490,24 @@ li.sub-menu-style-two:hover ul.sub-menu-two {
     font-weight: 400;
     font-family: "Lora";
     margin-left: 3px;
+    margin-bottom: 10px;
 }
 
 .booking-input-box input {
-    width: 78% !important;
-    height: 50px;
+    width: 100% !important;
+    height: 45px;
+    font-size: 14px !important;
     outline: 0 !important;
-    background: transparent;
+    background: #3e3e3e;
     border: transparent !important;
+    border-radius: 6px;
     color: #fff;
-    padding: 0 6px 0 0 !important;
+    padding: 0 6px 0 6px !important
 }
 
 .booking-input-box input::placeholder {
-    color: #fff;
+    color: #ffffffc0;
+    font-size: 14px;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -521,31 +515,38 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .booking-input-box select {
-    width: 78%;
-    height: 50px;
+    width: 100%;
+    height: 45px;
+    font-size: 14px !important;
     outline: 0;
-    background: transparent;
+    background: #3e3e3e;
     border: transparent;
+    border-radius: 6px;
     color: #fff;
+    padding: 0 6px 0 6px !important
+}
+
+.booking-input-box.upper select {
+    width: 45%;
 }
 
 .booking-input-box option {
-    color: #222;
+    color: #e3e3e3;
     font-family: "Lora";
-    font-size: 16px !important;
+    font-size: 14px !important;
     display: inline-block;
 }
 
 .booking-button {
     position: absolute;
     right: -86%;
-    top: 58px;
+    top: 70px;
     display: inline-block;
 }
 
 .booking-button button {
     background: #C19E68;
-    padding: 12px 31px;
+    padding: 10px 31px;
     border: transparent;
     font-size: 15px;
     text-transform: uppercase;
@@ -553,6 +554,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: 500;
     font-family: "Cormorant Garamond";
     position: relative;
+    border-radius: 6px;
     z-index: 1;
     transition: 0.5s;
 }
@@ -3647,7 +3649,7 @@ a.dark-logo {
 <!--Start Facilities Area Home Three-->
 <!-- ==================================================-->*/
 .home-three.facilities-area {
-    background-color: #f8f8f8;
+    background-color: #ecdecd;
     padding: 100px 0 100px;
 }
 

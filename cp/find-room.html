@@ -232,8 +232,12 @@
 				</div>
 			</div>
 			<div class="row">
-				<form action="https://formspree.io/f/myyleorq" method="POST" id="dreamit-form">
+				<form action="#" method="POST" id="dreamit-form">
 					<div class="row add-bg align-items-center">
+						<div class="booking-input-box">
+							<h4>Contact No</h4>
+							<input type="tel" placeholder="ex- 01888999444" required>
+						</div>
 						<div class="booking-input-box">
 							<h4>Check In</h4>
 							<input type="date" required>
@@ -242,23 +246,34 @@
 							<h4>Check Out</h4>
 							<input type="date" required>
 						</div>
-						<div class="booking-input-box">
+						<div class="booking-input-box room-selection">
 							<h4>Rooms</h4>
-							<select name="place" id="place">
-								<option value="saab">01 Rooms</option>
-								<option value="opel">02 Rooms</option>
-								<option value="audi">03 Rooms</option>
-								<option value="audi">04 Rooms</option>
+							<select name="room" id="room" required>
+								<option selected="selected" disabled="disabled" value="">Select a room</option>
+								<option value="lcs">Luxury Cottage (Single)</option>
+								<option value="lcd">Luxury Cottage (Double)</option>
+								<option value="lcc">Luxury Cottage (Couple)</option>
+								<option value="sas">Studio Apartment (Single)</option>
+								<option value="sad">Studio Apartment (Double)</option>
+								<option value="sac">Studio Apartment (Couple)</option>
 							</select>
 						</div>
 						<div class="booking-input-box upper">
 							<h4>Guests</h4>
-							<select name="place" id="place">
-								<option value="saab">01 Adult, 0 Child</option>
-								<option value="opel">02 Adult, 1 Child</option>
-								<option value="audi">02 Adult, 2 Child</option>
-								<option value="audi">02 Adult, 3 Child</option>
-							</select>
+							<div class="adults-child-selection">
+								<select name="place" id="place">
+									<option value="saab">01 Adult</option>
+									<option value="opel">02 Adult</option>
+									<option value="audi">02 Adult</option>
+									<option value="audi">02 Adult</option>
+								</select>
+								<select name="place" id="place">
+									<option value="saab">0 Child</option>
+									<option value="opel">1 Child</option>
+									<option value="audi">2 Child</option>
+									<option value="audi">3 Child</option>
+								</select>
+							</div>
 						</div>
 						<div class="booking-button">
 							<button type="submit">Book Now</button>

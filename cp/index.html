@@ -192,8 +192,12 @@
 	<!--==================================================-->
 	<div class="booking-area home-1">
 		<div class="container">
-			<form action="https://formspree.io/f/myyleorq" method="POST" id="dreamit-form">
+			<form action="#" method="POST" id="dreamit-form">
 				<div class="row add-bg align-items-center">
+					<div class="booking-input-box">
+						<h4>Contact No</h4>
+						<input type="tel" placeholder="ex- 01888999444" required>
+					</div>
 					<div class="booking-input-box">
 						<h4>Check In</h4>
 						<input type="date" required>
@@ -202,23 +206,34 @@
 						<h4>Check Out</h4>
 						<input type="date" required>
 					</div>
-					<div class="booking-input-box">
+					<div class="booking-input-box room-selection">
 						<h4>Rooms</h4>
-						<select name="place" id="place">
-							<option value="saab">01 Rooms</option>
-							<option value="opel">02 Rooms</option>
-							<option value="audi">03 Rooms</option>
-							<option value="audi">04 Rooms</option>
+						<select name="room" id="room" required>
+							<option selected="selected" disabled="disabled" value="">Select a room</option>
+							<option value="lcs">Luxury Cottage (Single)</option>
+							<option value="lcd">Luxury Cottage (Double)</option>
+							<option value="lcc">Luxury Cottage (Couple)</option>
+							<option value="sas">Studio Apartment (Single)</option>
+							<option value="sad">Studio Apartment (Double)</option>
+							<option value="sac">Studio Apartment (Couple)</option>
 						</select>
 					</div>
 					<div class="booking-input-box upper">
 						<h4>Guests</h4>
-						<select name="place" id="place">
-							<option value="saab">01 Adult, 0 Child</option>
-							<option value="opel">02 Adult, 1 Child</option>
-							<option value="audi">02 Adult, 2 Child</option>
-							<option value="audi">02 Adult, 3 Child</option>
-						</select>
+						<div class="adults-child-selection">
+							<select name="place" id="place">
+								<option value="saab">01 Adult</option>
+								<option value="opel">02 Adult</option>
+								<option value="audi">02 Adult</option>
+								<option value="audi">02 Adult</option>
+							</select>
+							<select name="place" id="place">
+								<option value="saab">0 Child</option>
+								<option value="opel">1 Child</option>
+								<option value="audi">2 Child</option>
+								<option value="audi">3 Child</option>
+							</select>
+						</div>
 					</div>
 					<div class="booking-button">
 						<button type="submit">Book Now</button>
@@ -545,136 +560,6 @@
 	<!--==================================================-->
 	<!-- End capitalparadise Facilities Area Home Three-->
 	<!--==================================================-->
-
-	<!--==================================================-->
-	<!-- Start capitalparadise Feature Area -->
-	<!--==================================================-->
-	<div class="feature-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<div class="section-title center" data-cue="zoomIn">
-						<div class="section-thumb">
-							<img src="assets/images/home-1/section-shape1.png" alt="">
-						</div>
-						<h1>Hotel’S Facilities</h1>
-						<p class="section-desc-1">Proactively morph optimal infomediaries rather than accurate expertise. Intrinsicly
-							progressive resources rather than resource-leveling</p>
-					</div>
-				</div>
-			</div>
-			<div class="row" data-cue="zoomIn">
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="single-feature-box">
-						<div class="feature-icon">
-							<img src="assets/images/home-1/feature-1.png" alt="">
-						</div>
-						<div class="feature-content">
-							<h4>Room Services</h4>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="single-feature-box">
-						<div class="feature-icon">
-							<img src="assets/images/home-1/feature-2.png" alt="">
-						</div>
-						<div class="feature-content">
-							<h4>Wi-Fi Internet</h4>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="single-feature-box">
-						<div class="feature-icon">
-							<img src="assets/images/home-1/feature-3.png" alt="">
-						</div>
-						<div class="feature-content">
-							<h4>Smart Key</h4>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="single-feature-box">
-						<div class="feature-icon">
-							<img src="assets/images/home-1/feature-4.png" alt="">
-						</div>
-						<div class="feature-content">
-							<h4>Breakfast</h4>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="single-feature-box">
-						<div class="feature-icon">
-							<img src="assets/images/home-1/feature-5.png" alt="">
-						</div>
-						<div class="feature-content">
-							<h4>Swimming Pool</h4>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6">
-					<div class="single-feature-box">
-						<div class="feature-icon">
-							<img src="assets/images/home-1/feature-2.png" alt="">
-						</div>
-						<div class="feature-content">
-							<h4>Wi-Fi Internet</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--==================================================-->
-	<!-- End capitalparadise Feature Area -->
-	<!--==================================================-->
-
-
-
-	<!--==================================================-->
-	<!-- Start capitalparadise Call Do Action Area -->
-	<!--==================================================-->
-	<div class="call-do-action-area">
-		<div class="container">
-			<div class="row align-items-center call-do-action-bg">
-				<div class="col-lg-6 col-md-12">
-					<div class="section-title two" data-cue="zoomIn">
-						<h4>Manager</h4>
-						<h1>Luxury Best Hotel In</h1>
-						<h1>Dhaka, Bangladesh</h1>
-						<p class="section-desc-2">Rapidiously myocardinate cross-platform intellectual capital after
-							model. Appropriately create interactive infrastructures after main
-							Holisticly facilitate stand-alone inframe.</p>
-					</div>
-					<div class="call-do-action-text" data-cue="zoomIn">
-						<a href="#">“ Model. Appropriately create interactive infrastructures after main
-							Holisticly facilitate stand-alone inframe of the world ”</a>
-					</div>
-					<div class="call-do-action-author" data-cue="zoomIn">
-						<div class="call-do-action-author-thumb">
-							<img src="assets/images/home-1/call-do-action-img.png" alt="">
-						</div>
-						<div class="call-do-action-content">
-							<h4>John D. Alexon</h4>
-							<p>Manger</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-12">
-					<div class="call-do-action-video" data-cues="zoomIn">
-						<a class="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true" href="https://www.youtube.com/watch?v=e6R6VsgD8yQ&amp;t=179s"><i class="bi bi-play"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--==================================================-->
-	<!-- End capitalparadise Call Do Action Area -->
-	<!--==================================================-->
-
-
 
 
 	<!--==================================================-->
