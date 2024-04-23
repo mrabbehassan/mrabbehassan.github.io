@@ -1,3 +1,10 @@
+/* Normal desktop :1400px. */
+@media (min-width: 1200px) {
+    .em-service-title h2 {
+        height: 10rem;
+    }
+}
+
 /* Normal desktop :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
     .app_menu>ul>li>a {
@@ -377,12 +384,9 @@
         font-size: 18px;
     }
 
-
-
-
-
-
-
+    .em-service-title h2 {
+        height: 9rem;
+    }
 }
 
 
@@ -528,10 +532,6 @@
 
     .style-two.about-area .app-section-title h2 {
         font-size: 28px;
-    }
-
-    .style-three.lines .line {
-        top: 57px;
     }
 
     .featured-about-thumb1 {
@@ -758,7 +758,7 @@
         font-size: 15px;
     }
 
-    .row.footer-bg .col-lg-3.col-md-6.pr-0 {
+    .row.footer-bg .col-lg-3.col-md-6.pe-0 {
         padding-right: 15px !important;
     }
 
@@ -1041,7 +1041,7 @@
         text-align: center;
     }
 
-    .app-button.text-right.pt-20 {
+    .app-button.text-end.pt-20 {
         text-align: center !important;
         padding-top: 0 !important;
         padding: 0 0 70px;
@@ -1093,10 +1093,6 @@
         text-align: center;
     }
 
-    .style-three.lines .line {
-        top: 68px;
-    }
-
     .em-service-text p {
         font-size: 15px;
     }
@@ -1111,7 +1107,7 @@
         margin-top: -20px;
     }
 
-    .app-button.text-right.pt-30 {
+    .app-button.text-end.pt-30 {
         text-align: center !important;
         padding: 0 0 30px !important;
     }
@@ -1217,7 +1213,7 @@
     }
 
     /*skill*/
-    .slill-single-thumb.pl-50.ml-1 {
+    .slill-single-thumb.ps-50.ms-1 {
         padding: 15px 0 0 0 !important;
     }
 
@@ -1492,12 +1488,6 @@
         display: none;
     }
 
-
-
-
-
-
-
 }
 
 /* small mobile :480px. */
@@ -1577,7 +1567,7 @@
         text-align: center;
     }
 
-    .app-button.text-right.pt-30 {
+    .app-button.text-end.pt-30 {
         text-align: center !important;
         padding: 0 0 30px !important;
     }
@@ -1591,7 +1581,7 @@
         padding: 0 0 25px !important;
     }
 
-    .app-button.text-right.pt-20 {
+    .app-button.text-end.pt-20 {
         text-align: center !important;
         padding: 0 0 70px !important;
     }
@@ -1864,10 +1854,6 @@
         font-size: 14px;
     }
 
-    .style-three.lines .line {
-        top: 62px;
-    }
-
     .faq-area {
         height: 1460px;
     }
@@ -1883,7 +1869,7 @@
         font-size: 28px;
     }
 
-    .slill-single-thumb.pl-50 {
+    .slill-single-thumb.ps-50 {
         padding-left: 0 !important;
     }
 
@@ -1909,7 +1895,7 @@
         padding: 22px 0 50px;
     }
 
-    .slill-single-thumb.pl-50 {
+    .slill-single-thumb.ps-50 {
         padding-left: 0 !important;
         margin-top: 30px;
     }
@@ -2067,6 +2053,10 @@
     .tabs li a {
         font-size: 15px;
         padding: 5px 21px;
+    }
+
+    .process-area .tabs li a {
+        font-size: 0.83rem;
     }
 
     .tabs_item img {
@@ -2258,7 +2248,7 @@
         text-align: center;
     }
 
-    .app-button.text-right.pt-30 {
+    .app-button.text-end.pt-30 {
         text-align: center !important;
         padding: 0 0 30px !important;
     }
@@ -2284,7 +2274,7 @@
         padding: 0 0 25px !important;
     }
 
-    .app-button.text-right.pt-20 {
+    .app-button.text-end.pt-20 {
         text-align: center !important;
         padding: 0 0 70px !important;
     }
@@ -2548,7 +2538,7 @@
         color: #fff;
     }
 
-    .process-area .col-lg-6.col-md-6.pt-20.pl-50 {
+    .process-area .col-lg-6.col-md-6.pt-20.ps-50 {
         padding-left: 25px;
         text-align: center;
     }
@@ -2575,7 +2565,7 @@
     }
 
     /*skill*/
-    .slill-single-thumb.pl-50 {
+    .slill-single-thumb.ps-50 {
         padding-left: 0 !important;
     }
 
@@ -2838,6 +2828,10 @@
         padding: 5px 22px;
     }
 
+    .process-area .tabs li a {
+        font-size: 0.83rem;
+    }
+
     ul.tabs-inner-list li {
         font-size: 14px;
     }
@@ -3034,9 +3028,48 @@
     }
 }
 
+@media only screen and (max-width: 1800px) {
+    .process-area .tabs li {
+        width: 33px;
+        height: 35px;
+        transition: width 0.2s ease-in-out;
+    }
+
+    .process-area .tabs li a span {
+        display: none;
+    }
+
+    .process-area .tabs li:hover {
+        width: 235px;
+    }
+
+    .process-area .tabs li:hover a span {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .header-top-area {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 599px) {
     .row.align-items-center {
         margin: 0 5px;
+    }
+
+    .slider-cta {
+        justify-content: center;
+    }
+
+    .slider-button {
+        margin: 0;
+    }
+
+    .loaded .slider-contact-box {
+        width: 100%;
+        justify-content: center;
     }
 }
 

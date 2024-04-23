@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en-US">
 
 <head>
@@ -21,8 +21,8 @@
 	<link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all">
 	<!-- font-flaticon CSS -->
 	<link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" media="all">
-	<!-- theme-default CSS -->
-	<link rel="stylesheet" href="assets/css/theme-default.css" type="text/css" media="all">
+	<!-- default CSS -->
+	<link rel="stylesheet" href="assets/css/default.css" type="text/css" media="all">
 	<!-- meanmenu CSS -->
 	<link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all">
 	<!-- Main Style CSS -->
@@ -56,7 +56,7 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-md-8">
-					<div class="header-top-left-items">
+					<div class="header-top-left-items position-relative">
 						<div class="header-top-left-single-item">
 							<a href="#">
 								<div class="header-top-left-icon">
@@ -82,7 +82,7 @@
 								<div class="header-top-left-icon">
 									<span>
 										<i class="fas fa-phone"></i>
-										+880 320 432 242
+										+880 1693569545
 									</span>
 								</div>
 							</a>
@@ -90,7 +90,7 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="header-top-right-items text-right">
+					<div class="header-top-right-items text-end">
 						<div class="header-top-right-icon-area">
 							<ul>
 								<li>
@@ -136,7 +136,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-9 pl-0 pr-0">
+				<div class="col-lg-9 ps-0 pe-0">
 					<nav class="app_menu">
 						<ul class="nav_scroll">
 							<li><a href="index.html">Home</a></li>
@@ -327,13 +327,40 @@
 	<!--==================================================-->
 	<!-- Start app Footer Middle Area -->
 	<!--==================================================-->
-	<div class="footer-middle style-two upper">
+	<div class="footer-middle">
 		<div class="container">
+			<div class="row subscribe-area">
+				<div class="col-lg-6 col-md-6">
+					<div class="subscribe-title">
+						<h1>Subscribe to our Newsletter</h1>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<form action="https://formspree.io/f/myyleorq" method="POST" id="featured-form">
+						<div class="subscribe_form position-relative">
+							<input type="email" name="email" id="email" class="form-control" required="" data-error="Please enter your email" placeholder="Enter Your Email">
+							<button type="submit" class="btn">Subscribe</button>
+						</div>
+						<div class="subscribe_form_send">
+
+						</div>
+					</form>
+					<div id="status"></div>
+				</div>
+				<div class="subscribe-shape">
+					<div class="subscribe-thumb bounce-animate5">
+						<img src="assets/images/resource/small-dot.png" alt="">
+					</div>
+					<div class="subscribe-thumb1">
+						<img src="assets/images/resource/big-dot.png" alt="">
+					</div>
+				</div>
+			</div>
 			<div class="row footer-bg">
-				<div class="col-lg-4 col-md-6 pl-0">
+				<div class="col-lg-4 col-md-6 ps-0">
 					<div class="widget widgets-company-info">
-						<div class="company-info-desc pr-2">
-							<h4 class="widget-title pb-4"> About Us </h4>
+						<div class="company-info-desc pe-2">
+							<h4 class="widget-title"> About Us </h4>
 							<p>Busines Consulting is optimize standing manufactured products and installation synergy. Professionally predominat why professional business</p>
 						</div>
 						<div class="follow-company-icon">
@@ -346,7 +373,7 @@
 				</div>
 				<div class="col-lg-2 col-md-6">
 					<div class="widget widget-nav-menu">
-						<h4 class="widget-title pb-4">Company</h4>
+						<h4 class="widget-title">Company</h4>
 						<div class="menu-quick-link-content">
 							<ul class="footer-menu">
 								<li><a href="#"> Home </a></li>
@@ -358,9 +385,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6 pl-20">
+				<div class="col-lg-3 col-md-6 ps-20">
 					<div class="widget widget-nav-menu">
-						<h4 class="widget-title pb-4"> Services </h4>
+						<h4 class="widget-title"> Services </h4>
 						<div class="menu-quick-link-content">
 							<ul class="footer-menu">
 								<li><a href="#"> Strategy & Planing </a></li>
@@ -372,34 +399,47 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 pl-0 pr-0">
+				<div class="col-lg-3 col-md-6 pe-0">
 					<div id="em-recent-post-widget">
 						<div class="single-widget-item">
-							<h4 class="widget-title pb-2">Popular Posts</h4>
-							<div class="contact-form-footer pt-40">
-								<form>
-									<div class="subscribe_form">
-										<input type="email" name="email" id="email" class="form-control" required="" data-error="Please enter your email" placeholder="Enter E-Mail">
-										<button type="submit" class="btn"> <i class="bi bi-send-check"></i> </button>
-									</div>
-									<div class="subscribe_form_send">
-
-									</div>
-								</form>
-							</div>
-							<div class="recent-post-item">
-								<div class="recent-post-thumb1">
+							<h4 class="widget-title">Popular Posts</h4>
+							<div class="recent-post-item active">
+								<div class="recent-post-image">
 									<a href="#">
-										<img src="assets/images/resource/google-play.png" alt="">
+										<img width="80" height="80" src="assets/images/resource/footer1.png" alt="">
 									</a>
 								</div>
-								<div class="recent-post-thumb">
+								<div class="recent-post-text">
+									<h6><a href="#">
+											How To Plugin Install WP server?
+										</a>
+									</h6>
+									<span class="rcomment">December 12, 2022</span>
+								</div>
+							</div>
+							<div class="recent-post-item">
+								<div class="recent-post-image">
 									<a href="#">
-										<img src="assets/images/resource/app-store.png" alt="">
+										<img width="80" height="80" src="assets/images/resource/footer2.png" alt="">
 									</a>
+								</div>
+								<div class="recent-post-text">
+									<h6><a href="#">
+											Top 10 Most Usefull Google Extansion
+										</a>
+									</h6>
+									<span class="rcomment">December 15, 2022</span>
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="foorer-shape">
+					<div class="footer-thumb">
+						<img src="assets/images/resource/red-dot.png" alt="">
+					</div>
+					<div class="footer-thumb1 bounce-animate2">
+						<img src="assets/images/resource/all-shape.png" alt="">
 					</div>
 				</div>
 			</div>

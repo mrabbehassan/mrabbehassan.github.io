@@ -17,7 +17,7 @@
 .header-top-area::before {
     content: "";
     height: 100%;
-    width: 54%;
+    width: 65%;
     background: #F46121;
     position: absolute;
     top: 0;
@@ -135,8 +135,6 @@
         transform: translate(65px, -50%);
     }
 }
-
-
 
 .loader-wrapper .loder-section {
     position: fixed;
@@ -536,7 +534,8 @@ nav.app_menu span {
 <!-- ============================================================== -->*/
 .slider-area {
     background: url(../images/bg/bgOne.webp);
-    background-color: #030615;
+    /* background-color: #030615; */
+    background-color: #171e41;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -612,11 +611,12 @@ nav.app_menu span {
 
 /*slider button*/
 .slider-cta {
+    display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 
 .slider-button {
-    float: left;
     margin-right: 30px;
 }
 
@@ -687,6 +687,8 @@ nav.app_menu span {
 
 /*slider contact*/
 .loaded .slider-contact-box {
+    display: flex;
+    width: 50%;
     animation: reveal-top-to-bottom 1s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
@@ -695,7 +697,6 @@ nav.app_menu span {
 }
 
 .contact-icon {
-    float: left;
     margin-right: 20px;
 }
 
@@ -985,7 +986,7 @@ nav.app_menu span {
 
 /*service box*/
 .featured-service-box {
-    padding: 0px 25px 30px;
+    padding: 0px 15px 30px;
     background-color: #fff;
     border: 1px solid rgba(35, 35, 35, 0.1);
     text-align: center;
@@ -1001,7 +1002,7 @@ nav.app_menu span {
     bottom: 0;
     width: 80px;
     height: 80px;
-    background-color: darkslateblue;
+    background-color: #f46121;
     transition: .5s;
     opacity: 0;
     z-index: -1;
@@ -1030,6 +1031,10 @@ nav.app_menu span {
     background: #F46121;
 }
 
+.featured-service-box:hover .em-service-title h2::before {
+    background: #ffffff;
+}
+
 .em-service-icon {
     position: absolute;
     top: -42px;
@@ -1042,8 +1047,12 @@ nav.app_menu span {
     text-align: center;
     border-radius: 50%;
     background-color: #ffffff;
-    border: 1px solid rgba(35, 35, 35, 0.1);
+    border: 2px solid rgba(35, 35, 35, 0.1);
     transition: .5s;
+}
+
+.featured-service-box:hover .em-service-icon {
+    border: 2px solid rgba(255, 255, 255, 1);
 }
 
 .em-service-icon img {
@@ -1159,9 +1168,6 @@ nav.app_menu span {
     background: #F46121;
     color: #fff;
 }
-
-
-
 
 /*all hover*/
 .featured-service-box:hover .em-service-title h2,
@@ -1586,7 +1592,8 @@ nav.app_menu span {
 ======================================================**/
 .about-area {
     background: url(../images/bg/bgTwo.webp);
-    background-color: #030615;
+    /* background-color: #030615; */
+    background-color: #171e41;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2017,7 +2024,7 @@ p.about-text1 {
     top: 9px;
     height: 2px;
     width: 393px;
-    background-color: rgba(255, 255, 255, 0.14901960784313725);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .couter-top-title h3:after {
@@ -2027,7 +2034,7 @@ p.about-text1 {
     top: 9px;
     height: 2px;
     width: 393px;
-    background-color: rgba(255, 255, 255, 0.14901960784313725);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .counter-title h4 {
@@ -2055,7 +2062,9 @@ p.about-text1 {
   app case study area css
 ======================================================***/
 .case-study-area {
-    background: url(../images/resource/service-bg.png);
+    background: url(../images/bg/bgTwo.webp);
+    /* background-color: #030615; */
+    background-color: #171e41;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2934,7 +2943,8 @@ p.study-text1 {
   app Testimonial Area Css
 ======================================================***/
 .testimonial-area {
-    background: url(../images/resource/testimonial-bg.png);
+    background: url(../images/bg/bgTwo.webp);
+    background-color: #ffffff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2952,8 +2962,11 @@ p.study-text1 {
     text-align: left;
     z-index: 1;
     border-radius: 3px;
-    background: #fff;
+    background: #d3d7db;
     margin-bottom: 30px;
+    box-shadow: 1px 1px 4px #e8e7e7;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .testimonial-single-box:before {
@@ -2965,6 +2978,7 @@ p.study-text1 {
     width: 100%;
     transition: .5s;
     z-index: -1;
+    opacity: 0.6;
     background: url(../images/resource/earth.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -3005,6 +3019,14 @@ p.study-text1 {
     width: 31px;
     height: 31px;
 }
+
+.testimonial-area .owl-dot {
+    background-color: rgba(244, 97, 33, 0.3);
+  }
+
+  .testimonial-area .owl-dot.active {
+    background-color: #F46121;
+  }
 
 /*quote title*/
 .quote-title {
@@ -3108,6 +3130,10 @@ p.study-text1 {
     top: -85px;
 }
 
+.testi-shape-thumb1 img {
+    filter: brightness(0.8);
+}
+
 /*owl carousel*/
 .testimonial_list .owl-dots {
     text-align: center;
@@ -3164,7 +3190,7 @@ p.study-text1 {
     bottom: 0;
     width: 0%;
     height: 0%;
-    background: url(../images/resource/bx-bg.png);
+    background: #f46121;
     transition: .7s;
     border-radius: 3px;
     z-index: -1;
@@ -3201,7 +3227,7 @@ p.study-text1 {
     position: absolute;
     content: "";
     left: -24px;
-    top: -15px;
+    top: -13px;
     width: 60px;
     height: 55px;
     background: url(../images/resource/process-i2.png);
@@ -3246,6 +3272,66 @@ p.study-text1 {
     margin-top: 17px;
 }
 
+.process-area .tab {
+    min-height: 400px;
+    padding-top: 25px;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.process-area .tabs {
+    max-width: 250px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-bottom: 45px; */
+    flex-direction: column;
+    position: absolute;
+    z-index: 9;
+    left: 1%;
+}
+
+.process-area .tabs li {
+    background-color: white;
+    font-size: 0.83rem;
+    letter-spacing: -0.8px;
+    line-height: 33px;
+    float: none;
+    display: flex;
+    /* margin: 10px 12px; */
+    margin: 2px 8px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 13px -2px lightgray;
+}
+
+.process-area .tabs li:hover a {
+    color: #F46121;
+}
+
+.process-area li.current a {
+    background: #F46121 !important;
+    color: #fff !important;
+}
+
+.process-area .tabs li a {
+    background-color: #FFF;
+    color: #171e41;
+    border-bottom: 0;
+    width: 100%;
+    padding: 0px 8px;
+}
+
+.process-area .tabs li a i {
+    font-size: 1rem;
+    line-height: 2.1;
+}
+
+.process-area .tabs li a span {
+    padding-left: 8px;
+}
+
 /*all process hover*/
 .process-single-box:hover:before {
     width: 100%;
@@ -3257,6 +3343,11 @@ p.study-text1 {
     opacity: 1;
 }
 
+.process-single-box:hover .process-number span:before {
+    filter: brightness(100);
+}
+
+.process-single-box:hover .process-title h3,
 .process-single-box:hover .process-title span,
 .process-single-box:hover .process-title p {
     color: #fff;
@@ -3391,6 +3482,7 @@ p.study-text1 {
 }
 
 .single_team {
+    position: relative;
     margin-bottom: 30px;
 }
 
@@ -3880,6 +3972,10 @@ a.active {
     transition: .5s;
 }
 
+.call-to-contact .form_box input {
+    background: #eef0f7;
+}
+
 .form_box textarea {
     width: 100%;
     background: transparent;
@@ -3890,6 +3986,10 @@ a.active {
     border-radius: 30px;
     color: #232323;
     transition: .5s;
+}
+
+.call-to-contact .form_box textarea {
+    background: #eef0f7;
 }
 
 .form_box input::placeholder {
@@ -3969,7 +4069,9 @@ a.active {
   app Brand Area Css
 ======================================================***/
 .skill-area {
-    background: url(../images/resource/skill-bg.png);
+    background: url(../images/bg/bgTwo.webp);
+    /* background-color: #030615; */
+    background-color: #171e41;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -4242,7 +4344,9 @@ p.slill-text {
   app footer Area Css
 ======================================================***/
 .footer-middle {
-    background: url(../images/resource/footer-bg.png);
+    background: url(../images/bg/bgTwo.webp);
+    /* background-color: #030615; */
+    background-color: #171e41;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 75px 0 0px;
@@ -4363,7 +4467,7 @@ ul.footer-menu li a {
 
 /*recent post image*/
 .recent-post-item.active {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.14901960784313725);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     margin-bottom: 25px;
     padding: 32px 0 30px;
 }
@@ -4414,6 +4518,7 @@ ul.footer-menu li a:hover {
 
 a.logo_thumb img {
     width: 28%;
+    max-width: 155px;
 }
 
 .footer-bottom-content {
@@ -4434,7 +4539,7 @@ a.logo_thumb img {
 .footer-thumb img {
     position: absolute;
     right: -225px;
-    top: 106px;
+    top: 350px;
     animation: moveLeftBounce 4s linear infinite;
 }
 
@@ -4549,7 +4654,7 @@ a.logo_thumb img {
     text-align: center;
     padding: 13px 30px;
     position: absolute;
-    right: 24px;
+    right: 10px;
     top: 9px;
     display: inline-block;
     z-index: 1;
@@ -4767,7 +4872,7 @@ a.logo_thumb img {
 
 .style-two.lines .line {
     position: relative;
-    width: 103%;
+    width: 100%;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.3);
     overflow: hidden;
@@ -4795,7 +4900,7 @@ a.logo_thumb img {
 
 .style-three.lines .line {
     position: relative;
-    width: 103%;
+    width: 100%;
     height: 1px;
     background-color: #E0E0E0;
     overflow: hidden;
@@ -4816,7 +4921,6 @@ a.logo_thumb img {
     overflow: hidden;
 }
 
-
 /*style four*/
 .style-four.lines {
     position: absolute;
@@ -4827,7 +4931,7 @@ a.logo_thumb img {
 
 .style-four.lines .line {
     position: relative;
-    width: 103%;
+    width: 100%;
     height: 1px;
     top: 105px;
     left: 24%;
@@ -5649,7 +5753,7 @@ span.fill {
 
 .tabs li {
     float: left;
-    line-height: 38px;
+    line-height: 30px;
     overflow: hidden;
     padding: 0;
     position: relative;
@@ -5971,6 +6075,11 @@ ul.tabs-inner-list li i {
     padding: 100px 0 100px;
 }
 
+.call-to-contact {
+    background: url(../images/bg/bgTwo.webp);
+    background-color: #171e41;
+}
+
 .contact-us .appoinment-title {
     text-align: left;
 }
@@ -6055,6 +6164,10 @@ ul.tabs-inner-list li i {
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
     background: #fff;
     padding: 27px 40px 45px;
+}
+
+.call-to-contact .contact_from_box {
+    background-color: transparent;
 }
 
 /*-------------------
@@ -6349,7 +6462,7 @@ element.style {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 25px;
     border-radius: 5px;
-    border-left: 4px solid #F46121;
+    border-start: 4px solid #F46121;
     margin: 30px 0;
 }
 
